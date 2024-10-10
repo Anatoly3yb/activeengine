@@ -1,0 +1,10 @@
+short_name = "active"
+name = "Active Engine"
+major = 0
+minor = 1
+patch = 1
+status = "rc"
+module_config = ""
+year = 2024
+website = "https://activeengine.org"
+docs = "0.1"
