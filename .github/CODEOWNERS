@@ -1,0 +1,174 @@
+# Lines starting with '#' are comments.
+# Each line is a file pattern followed by one or more owners.
+# Owners can be @users, @org/teams or emails
+
+# Buildsystem
+
+.*                                  @activeengine/buildsystem
+.github/                            @activeengine/buildsystem
+*.py                                @activeengine/buildsystem
+SConstruct                          @activeengine/buildsystem
+SCsub                               @activeengine/buildsystem
+
+# Core
+
+/core/                              @activeengine/core
+/core/crypto/                       @activeengine/network
+/core/input*.*                      @activeengine/input
+
+# Doc
+
+/doc/                               @activeengine/documentation
+doc_classes/*                       @activeengine/documentation
+
+# Drivers
+
+## Audio
+/drivers/alsa/                      @activeengine/audio
+/drivers/alsamidi/                  @activeengine/audio
+/drivers/coreaudio/                 @activeengine/audio
+/drivers/coremidi/                  @activeengine/audio
+/drivers/pulseaudio/                @activeengine/audio
+/drivers/wasapi/                    @activeengine/audio
+/drivers/winmidi/                   @activeengine/audio
+/drivers/xaudio2/                   @activeengine/audio
+
+## Rendering
+/drivers/dummy/                     @activeengine/rendering
+/drivers/gl_context/                @activeengine/rendering
+/drivers/gles2/                     @activeengine/rendering
+/drivers/gles3/                     @activeengine/rendering
+/drivers/gles_common/               @activeengine/rendering
+
+## OS
+/drivers/unix/                      @activeengine/_platforms
+/drivers/windows/                   @activeengine/windows
+
+## Misc
+/drivers/png/                       @activeengine/import
+
+# Editor
+
+/editor/*debugger*                  @activeengine/debugger
+/editor/icons/                      @activeengine/usability
+/editor/import/                     @activeengine/import
+/editor/plugins/*2d_*.*             @activeengine/2d-editor
+/editor/plugins/script_*.*          @activeengine/script-editor
+/editor/plugins/*shader*.*          @activeengine/shaders
+/editor/code_editor.*               @activeengine/script-editor
+/editor/*dock*.*                    @activeengine/docks
+
+# Main
+
+/main/                              @activeengine/core
+/main/tests/                        @activeengine/tests
+
+# Misc
+
+/misc/                              @activeengine/buildsystem
+
+# Modules
+
+## Audio (+ video)
+/modules/minimp3/                   @activeengine/audio
+/modules/ogg/                       @activeengine/audio
+/modules/opus/                      @activeengine/audio
+/modules/stb_vorbis/                @activeengine/audio
+/modules/theora/                    @activeengine/audio
+/modules/vorbis/                    @activeengine/audio
+/modules/webm/                      @activeengine/audio
+
+## Import
+/modules/basis_universal/           @activeengine/import
+/modules/bmp/                       @activeengine/import
+/modules/cvtt/                      @activeengine/import
+/modules/dds/                       @activeengine/import
+/modules/etc/                       @activeengine/import
+/modules/fbx/                       @activeengine/import
+/modules/gltf/                      @activeengine/import
+/modules/hdr/                       @activeengine/import
+/modules/jpg/                       @activeengine/import
+/modules/pvr/                       @activeengine/import
+/modules/squish/                    @activeengine/import
+/modules/svg/                       @activeengine/import
+/modules/tga/                       @activeengine/import
+/modules/tinyexr/                   @activeengine/import
+/modules/webp/                      @activeengine/import
+
+## Network
+/modules/enet/                      @activeengine/network
+/modules/mbedtls/                   @activeengine/network
+/modules/upnp/                      @activeengine/network
+/modules/webrtc/                    @activeengine/network
+/modules/websocket/                 @activeengine/network
+
+## Rendering
+/modules/denoise/                   @activeengine/rendering
+/modules/glslang/                   @activeengine/rendering
+/modules/lightmapper_cpu/           @activeengine/rendering
+/modules/meshoptimizer/             @activeengine/rendering
+/modules/raycast/                   @activeengine/rendering
+/modules/vhacd/                     @activeengine/rendering
+/modules/xatlas_unwrap/             @activeengine/rendering
+
+## Scripting
+/modules/gdnative/                  @activeengine/gdnative
+/modules/gdscript/                  @activeengine/gdscript
+/modules/jsonrpc/                   @activeengine/gdscript
+/modules/mono/                      @activeengine/mono
+/modules/visual_script/             @activeengine/visualscript
+
+## Text
+/modules/freetype/                  @activeengine/buildsystem
+/modules/gdnative/text/             @activeengine/gui-nodes
+/modules/text_server_adv/           @activeengine/gui-nodes
+/modules/text_server_fb/            @activeengine/gui-nodes
+
+## XR
+/modules/camera/                    @activeengine/xr
+/modules/gdnative/arvr/             @activeengine/xr
+/modules/mobile_vr/                 @activeengine/xr
+/modules/webxr/                     @activeengine/xr
+
+## Misc
+/modules/bullet/                    @activeengine/physics
+/modules/csg/                       @activeengine/3d-nodes
+/modules/gridmap/                   @activeengine/3d-nodes
+/modules/opensimplex/               @activeengine/3d-nodes
+/modules/recast/                    @activeengine/navigation
+/modules/regex/                     @activeengine/core
+
+# Platform
+
+/platform/android/                  @activeengine/android
+/platform/iphone/                   @activeengine/ios
+/platform/javascript/               @activeengine/html5
+/platform/x11/                      @activeengine/linux-bsd
+/platform/osx/                      @activeengine/macos
+/platform/uwp/                      @activeengine/uwp
+/platform/windows/                  @activeengine/windows
+
+# Scene
+
+/scene/2d/                          @activeengine/2d-nodes
+/scene/3d/                          @activeengine/3d-nodes
+/scene/animation/                   @activeengine/animation
+/scene/audio/                       @activeengine/audio
+/scene/debugger/                    @activeengine/debugger
+/scene/gui/                         @activeengine/gui-nodes
+/scene/main/                        @activeengine/core
+/scene/resources/default_theme/     @activeengine/gui-nodes
+/scene/resources/font.*             @activeengine/gui-nodes
+/scene/resources/visual_shader*.*   @activeengine/shaders
+
+# Servers
+
+/servers/arvr*                      @activeengine/xr
+/servers/audio*                     @activeengine/audio
+/servers/camera*                    @activeengine/xr
+/servers/physics*                   @activeengine/physics
+/servers/visual*                    @activeengine/rendering
+
+# Thirdparty
+
+/thirdparty/                        @activeengine/buildsystem
