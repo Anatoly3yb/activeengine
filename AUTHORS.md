@@ -13,7 +13,6 @@ name is available.
 ## Project Founders
 
     Anatoly Zubarev (anatoly3yb)
-    Anatoly Zubarev (anatoly3yb)
 
 ## Lead Developer
 
@@ -24,7 +23,5 @@ name is available.
     Anatoly Zubarev (anatoly3yb)
 
 ## Developers
-
-(in alphabetical order, with over 10 commits excluding merges)
 
     Anatoly Zubarev (anatoly3yb)
