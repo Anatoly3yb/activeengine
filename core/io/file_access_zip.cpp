@@ -8,7 +8,7 @@ ZipArchive *ZipArchive::instance = nullptr;
 
 extern "C" {
 
-static void *activ_open(void *data, const char *p_fname, int mode) {
+static void *active_open(void *data, const char *p_fname, int mode) {
 	if (mode & ZLIB_FILEFUNC_MODE_WRITE) {
 		return nullptr;
 	}
