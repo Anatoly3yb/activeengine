@@ -227,7 +227,7 @@ public:
 	void set_argument_names(const Vector<StringName> &p_names); //set by class, db, can't be inferred otherwise
 	Vector<StringName> get_argument_names() const;
 
-	virtual GodotTypeInfo::Metadata get_argument_meta(int p_arg) const = 0;
+	virtual ActiveTypeInfo::Metadata get_argument_meta(int p_arg) const = 0;
 
 #endif
 	void set_hint_flags(uint32_t p_hint) { hint_flags = p_hint; }
@@ -280,8 +280,8 @@ public:
 	}
 
 #ifdef DEBUG_METHODS_ENABLED
-	virtual GodotTypeInfo::Metadata get_argument_meta(int) const {
-		return GodotTypeInfo::METADATA_NONE;
+	virtual ActiveTypeInfo::Metadata get_argument_meta(int) const {
+		return ActiveTypeInfo::METADATA_NONE;
 	}
 #endif
 
