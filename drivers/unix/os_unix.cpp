@@ -432,11 +432,11 @@ String OS_Unix::get_user_data_dir() const {
 			}
 			return get_data_path().plus_file(custom_dir);
 		} else {
-			return get_data_path().plus_file(get_godot_dir_name()).plus_file("app_userdata").plus_file(appname);
+			return get_data_path().plus_file(get_active_dir_name()).plus_file("app_userdata").plus_file(appname);
 		}
 	}
 
-	return get_data_path().plus_file(get_godot_dir_name()).plus_file("app_userdata").plus_file("[unnamed project]");
+	return get_data_path().plus_file(get_active_dir_name()).plus_file("app_userdata").plus_file("[unnamed project]");
 }
 
 String OS_Unix::get_executable_path() const {
