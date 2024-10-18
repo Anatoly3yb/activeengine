@@ -28,7 +28,7 @@ not-for-profit.
 
 Active Engine has started to be developed in October 2024, had been developed by [Anatoly Zubarev](https://github.com/reduz) as an in-house engine, used to publish out games.
 
-![Screenshot of a 3D scene in the Active Engine editor](https://godotmarketplace.com/wp-content/uploads/2020/03/7kortrp-2048x1109.png)
+![Screenshot of a 3D scene in the Active Engine editor](https://cdn.discordapp.com/attachments/858276521972858881/1295109209804902524/image.png?ex=671362b1&is=67121131&hm=eb2e48d4d0f023e118f1e614a87180428ff41f820e7c04bafa5579d747ad51a3&)
 
 ## Documentation and demos
 
