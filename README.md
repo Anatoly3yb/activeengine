@@ -2,7 +2,7 @@
 
 <p align="center">
   <a href="https://activeActiveengine.org">
-    <img src="logo_outlined.png" width="400" alt="Active Engine logo">
+    <img src="logo.png" width="500" alt="Active Engine logo">
   </a>
 </p>
 
